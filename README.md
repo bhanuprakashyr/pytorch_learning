@@ -107,3 +107,25 @@ DataLoader provides exactly that.
 ## Transforms
 
 Data does not always come in its final processed form that is required for training machine learning algorithms. We use transforms to perform some manipulation of the data and make it suitable for training.
+
+## Important Pytorch modules
+
+| Priority | Package / Module        | Status            | Primary Purpose |
+|---------:|-------------------------|-------------------|-----------------|
+| 1        | torch                   | Core / Mandatory  | Tensors, autograd, NN training, GPU |
+| 2        | torchvision             | Actively Used     | Computer vision datasets, transforms, models |
+| 3        | torchaudio              | Actively Used     | Audio & speech processing |
+| 4        | torch.utils.data        | Core / Mandatory  | Data loading, batching, pipelines |
+| 5        | torch.nn                | Core / Mandatory  | Layers, losses, model definitions |
+| 6        | torch.optim             | Core / Mandatory  | Optimizers (SGD, Adam, etc.) |
+| 7        | torch_geometric         | Actively Used     | Graph Neural Networks |
+| 8        | torchmetrics            | Actively Used     | Standard ML evaluation metrics |
+| 9        | pytorch-lightning       | Common (Optional) | Training loop abstraction |
+| 10       | functorch               | Advanced / Niche  | vmap, higher-order autodiff |
+| 11       | torchdata               | Limited Adoption  | Data pipelines (inconsistent use) |
+| 12       | torch_sparse            | Niche             | Sparse tensor ops (mostly GNNs) |
+| 13       | torch_scatter           | Niche             | Scatter / reduce ops (GNN internals) |
+| 14       | torch_cluster           | Niche             | Graph clustering & sampling |
+| 15       | torchdiffeq             | Research-only     | Neural ODEs |
+| 16       | torchtext               | Legacy            | NLP preprocessing (largely replaced) |
+
